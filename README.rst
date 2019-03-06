@@ -17,10 +17,16 @@ test-ml
     :alt: Coverage
 
 
-Treat your machine learning models like any other software asset: properly test it and fail builds if they don't meet
+Treat your machine learning models like any other software asset: properly test them and fail builds if they don't meet
 your desired performance.
 
-* Documentation: https://test-ml.readthedocs.io/en/latest/
+* Documentation: https://test-ml.readthedocs.io/en/latest/ (not live yet). For now, you can build the docs locally:
+
+.. code-block:: console
+
+    $ cd docs && make clean && make html
+
+Open then ``index.html`` in the newly created ``docs/_build`` folder and you're good to go.
 
 
 Overview
@@ -30,7 +36,7 @@ This library enables you to easily test machine learning artifacts. Specify a se
 and the rest is taken care of.
 
 
-.. note:: **STATUS**: alpha. Active development, but breaking changes may come.
+.. note:: Status: alpha. Active development, but breaking changes may come.
 
 
 Features
