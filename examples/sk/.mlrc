@@ -1,0 +1,11 @@
+# .mlrc to control pytest-ml
+[run]
+metrics = accuracy_score, recall_score
+data = extras/test.csv
+loader = joblib
+model = mdl.joblib
+
+
+[report]
+failure = 0
+report = console
