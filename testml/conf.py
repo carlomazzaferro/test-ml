@@ -7,7 +7,7 @@ import configparser
 class ConfigParser(configparser.RawConfigParser):
     """Our specialization of ConfigParser."""
 
-    def __init__(self, our_file: str):
+    def __init__(self, our_file: Union[str, bool]):
         """Create the ConfigParser.
 
         `our_file` is True if this config file is specifically for coverage,

@@ -26,6 +26,10 @@ class TestMlController(object):
 
         self.libs = [lib.LIB for lib in self.metrics]
 
+        if loader == 'sagemaker' and self.config.has_option(self.RUN_SECTION, 'model'):
+            raise ConfigException('When using sagemaker loader, you must provide the model argument with the name'
+                                  'of the deployed endpoint to be called')
+
         if not model and not self.config.has_option(self.RUN_SECTION, 'data'):
             data = self.infer_data()
 

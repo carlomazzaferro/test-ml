@@ -74,4 +74,14 @@ class SklearnLoader(Loader):
                 raise ModelLoadingException('Could not load model using either pickle or joblib')
 
 
+class SageMakerLoader(Loader):
+
+    def load(self):
+        """
+
+        Returns
+        -------
+
+        """
+        return self.model_file
 
