@@ -61,7 +61,8 @@ __metrics__ = {
         'hamming_loss',
         'log_loss',
         'hinge_loss',
-        'brier_score_loss'
+        'brier_score_loss',
+        'roc_auc_score'
     ]
 }
 

@@ -1,7 +1,10 @@
 
-
+import logging
 from typing import Any, List, Union
 import configparser
+
+logger = logging.getLogger('root')
+logger.setLevel(logging.DEBUG)
 
 
 class ConfigParser(configparser.RawConfigParser):

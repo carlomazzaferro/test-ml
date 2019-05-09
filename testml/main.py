@@ -21,7 +21,7 @@ __license__ = "GNU General Public License v3"
 @click.option('-d', '--data', help='CSV input data to be fed to the model. The only required formatting is that it can'
                                    'be loaded by pandas and the very last column has the labels for each of the row'
                                    'inputs.', required=True)
-@click.option('-s', '--metrics', help='Metrics to be used', required=True)
+@click.option('-s', '--metrics', help='Metrics to be used', required=True)  # TODO: make these not required
 @click.option('-m', '--model', help='Model to be loaded', default=None)
 @click.option('-l', '--loader', help='Which loader to use',
               type=click.Choice(['joblib', 'pickle', 'keras', 'tensorflow', 'infer']), default='infer')

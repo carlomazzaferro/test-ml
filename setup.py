@@ -9,7 +9,8 @@ from pathlib import Path
 EXTENSIONS = {
     'tf',
     'tf_gpu',
-    'sklearn'
+    'sklearn',
+    'xgboost'
 }
 
 
